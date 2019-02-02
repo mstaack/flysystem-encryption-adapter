@@ -1,0 +1,45 @@
+{
+  "name": "mstaack/flysystem-encryption-adapter",
+  "type": "library",
+  "description": "Transparently encrypt and decrypt your content with flysystem",
+  "keywords": [
+    "encryption",
+    "flysystem"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Max"
+    }
+  ],
+  "require": {
+    "php": ">=7.2",
+    "clue/stream-filter": "^1.4",
+    "defuse/php-encryption": "^2.2",
+    "league/flysystem": "^1.0",
+    "league/flysystem-adapter-decorator": "^1.0",
+    "league/flysystem-replicate-adapter": "^1.0",
+    "league/flysystem-ziparchive": "^1.0",
+    "paragonie/halite": "^4.5"
+  },
+  "require-dev": {
+    "codedungeon/phpunit-result-printer": "^0.25.0",
+    "larapack/dd": "^1.1",
+    "league/flysystem-memory": "^1.0",
+    "phpunit/phpunit": "^6.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "MStaack\\Flysystem\\Encryption\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "MStaack\\Flysystem\\Encryption\\Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "prefer-stable": true
+}
